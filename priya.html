@@ -1,0 +1,363 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Job Application Form</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background:linear-gradient(90deg,rgba(2,0,6,1)0%, rgba(9,9,121,1) 35%,rgba(0,212,255,1)100%);
+        }
+
+        .wrapper {
+            background-color: azure;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .wrapper h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #004080;
+        }
+        .details:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+        .wrapper .details {
+            margin-bottom: 15px;
+        }
+
+        .wrapper .details label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .wrapper .details input {
+            width: 93%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .wrapper .details select{
+            width: 95%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+    
+       
+
+        .wrapper .form-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+            
+        .wrapper button {
+            background: #004080;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .wrapper button[disabled] {
+            background: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper" >
+        <h2>Job Application Form</h2>
+        
+        
+        <div class="form" >
+            <div class="details">
+                <label for="candidate-name">Full Name</label>
+                <input type="text" id="candidate-name" placeholder="Enter your full name">
+            </div>
+            <div class="details">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="details">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="details">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob">
+            </div>
+            <div class="details">
+                <label for="gender">Gender</label>
+                <select id="gender">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="details">
+                <label for="nationality">Nationality</label>
+                <input type="text" id="nationality" placeholder="Enter your nationality">
+            </div>
+            <div class="details">
+                <label for="marital-status">Marital Status</label>
+                <select id="marital-status">
+                    <option value="">Select</option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-actions">
+                <button id="next-to-page-2">Next</button>
+            </div>
+        </div>
+
+        
+        <div  class="form" style="display: none;">
+            <div class="details">
+                    <label for="education">Highest Qualification</label>
+                    <select id="education">
+                        <option value="">Select</option>
+                        <option value="master">Master's Degree</option>
+                        <option value="bachelor">Degree</option>
+                        <option value="Inter">Inter</option>
+                    </select>
+                </div>
+                <div class="details" >
+                    <label for="Institution">Institution Name</label>
+                   <select id="Institution">
+                       <option value="">Select</option>
+                       <option value="KBN">KBN</option>
+                       <option value="Siddardha">Siddardha</option>
+                       <option value="stella">stella</option>
+                       <option value="other">others</option>
+                   </select>
+                   </div>
+                <div class="details">
+                    <label for="specialization">Specialization</label>
+                    <select id="specialization">
+                        <option value="">Select</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="computers">Computers</option>
+                        <option value="statistics">statistics</option>
+                        <option value="other">others</option>
+                    </select>
+                    </div>
+            <div class="details">
+                <label for="year passing">Year of Passing</label>
+                <select id="year passing">
+                    <option value="">Select</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="other">others</option>
+                </select>
+                </div>
+               <div class="details">
+                <label for="tenth-grade">10th Grade Percentage</label>
+                <input type="number" id="tenth-grade" placeholder="Enter 10th grade percentage">
+            </div>
+            <div class="details">
+                <label for="twelfth-grade">12th Grade Percentage</label>
+                <input type="number" id="twelfth-grade" placeholder="Enter 12th grade percentage">
+            </div>
+            <div class="details">
+                <label for="grade">Percentage</label>
+                <input type="number" id="grade" placeholder="Enter  percentage">
+            </div>
+           
+            <div class="details">
+                <button id="back-to-page-1">Back</button>
+                <button id="next-to-page-3">Next</button>
+            </div>
+        </div>
+
+        
+        <div  class="form" style="display: none;">
+            <div class="details">
+                <label for="preferred-location">Preferred Job Location</label>
+                <select id="preferred-location">
+                    <option value="">Select</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="chennai">Chennai</option>
+                </select>
+            </div>
+            <div class="details">
+                <label for="Exam-Center">Exam-Center</label>
+                <select id="Exam-Center">
+                    <option value="">Select</option>
+                    <option value="Vijayawada">Vijayawada</option>
+                    <option value="Guntur">Guntur</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="chennai">Chennai</option>
+                </select>
+            </div>
+            <div class="details">
+                <label for="resume">resume</label>
+                <input type="file" id="resume" name="resume">
+            </div>
+            <div class="details">
+                <label for="cvv photo">cvv photo</label>
+                <input type="file" type="file" id="cvv photo" name="cvv photo">
+            </div>
+            <div class="form-actions">
+                <button id="back-to-page-2">Back</button>
+                <button id="next-to-page-4">Next</button>
+            </div>
+        </div>
+
+    
+        <div  class="form" style="display: none;">
+            <div class="details">
+                <p>
+                    I hereby declare that all the information provided is true to the best of my knowledge. I understand that any
+                    misinformation may lead to the rejection of my application.
+                </p>
+                <label>
+                    <input type="checkbox" id="declaration"> <br>
+                     I agree to the terms and conditions.
+                </label>
+            </div>
+            <div class="form-actions">
+                <button id="back-to-page-3">Back</button>
+                <button id="submit-form" disabled>Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+let currentPage = 0;
+const pages = document.querySelectorAll('.form');
+const submitButton = document.getElementById('submit-form');
+
+
+function showPage(pageIndex) {
+    pages.forEach((page, index) => {
+        page.style.display = (index === pageIndex) ? 'block' : 'none';
+    });
+}
+
+
+document.getElementById('next-to-page-2').addEventListener('click', () => {
+    currentPage = 1;
+    showPage(currentPage);
+});
+
+document.getElementById('next-to-page-3').addEventListener('click', () => {
+    currentPage = 2;
+    showPage(currentPage);
+});
+
+document.getElementById('next-to-page-4').addEventListener('click', () => {
+    currentPage = 3;
+    showPage(currentPage);
+});
+
+document.getElementById('back-to-page-1').addEventListener('click', () => {
+    currentPage = 0;
+    showPage(currentPage);
+});
+
+document.getElementById('back-to-page-2').addEventListener('click', () => {
+    currentPage = 1;
+    showPage(currentPage);
+});
+
+document.getElementById('back-to-page-3').addEventListener('click', () => {
+    currentPage = 2;
+    showPage(currentPage);
+});
+
+
+document.getElementById('declaration').addEventListener('change', (event) => {
+    submitButton.disabled = !event.target.checked;
+});
+
+
+submitButton.addEventListener('click', () => {
+    
+    const formData = {
+        name: document.getElementById('candidate-name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        dob: document.getElementById('dob').value,
+        gender: document.getElementById('gender').value,
+        nationality: document.getElementById('nationality').value,
+        maritalStatus: document.getElementById('marital-status').value,
+        education: document.getElementById('education').value,
+        institution: document.getElementById('Institution').value,
+        specialization: document.getElementById('specialization').value,
+        yearOfPassing: document.getElementById('year passing').value,
+        tenthGrade: document.getElementById('tenth-grade').value,
+        twelfthGrade: document.getElementById('twelfth-grade').value,
+        percentage: document.getElementById('grade').value,
+        jobLocation: document.getElementById('preferred-location').value,
+        examCenter: document.getElementById('Exam-Center').value,
+        resume: document.getElementById('resume').files[0] ? document.getElementById('resume').files[0].name : 'No file uploaded',
+        cvvPhoto: document.getElementById('cvv photo').files[0] ? document.getElementById('cvv photo').files[0].name : 'No file uploaded',
+    };
+
+    
+    let displayData = `
+        Full Name: ${formData.name}\n
+        Email: ${formData.email}\n
+        Phone: ${formData.phone}\n
+        Date of Birth: ${formData.dob}\n
+        Gender: ${formData.gender}\n
+        Nationality: ${formData.nationality}\n
+        Marital Status: ${formData.maritalStatus}\n
+        Education: ${formData.education}\n
+        Institution: ${formData.institution}\n
+        Specialization: ${formData.specialization}\n
+        Year of Passing: ${formData.yearOfPassing}\n
+        10th Grade Percentage: ${formData.tenthGrade}\n
+        12th Grade Percentage: ${formData.twelfthGrade}\n
+        Degree Percentage: ${formData.percentage}\n
+        Preferred Job Location: ${formData.jobLocation}\n
+        Exam Center: ${formData.examCenter}\n
+        Resume: ${formData.resume}\n
+        CVV Photo: ${formData.cvvPhoto}
+    `;
+
+    
+    alert("Submitted Details:\n" + displayData);
+
+    console.log(formData);
+
+    
+    const wrapper = document.querySelector('.wrapper');
+    wrapper.innerHTML = `
+        <h2>Details</h2>
+        <pre>${displayData}</pre>
+    `;
+});
+showPage(currentPage);
+</script>
+</body>
+</html>
